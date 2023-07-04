@@ -1,19 +1,11 @@
-const carculator = {
-  add: function (a, b) {
-    console.log(a + b);
-  },
-  minus: function (a, b) {
-    console.log(a - b);
-  },
-  divide: function (a, b) {
-    console.log(a / b);
-  },
-  powerof: function (a, b) {
-    console.log(a ** b);
-  },
-};
+const age = parseInt(prompt("How old are you?"));
 
-carculator.add(2, 4);
-carculator.minus(5, 4);
-carculator.divide(10, 2);
-carculator.powerof(2, 2);
+if (isNaN(age) || age < 0) {
+  console.log("Plz write a real positive number");
+} else if (age < 18) {
+  console.log("You are too young");
+} else if (age >= 18 && age >= 50) {
+  console.log("you need to becareful");
+} else {
+  console.log("you can drink");
+}
